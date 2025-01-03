@@ -1,16 +1,4 @@
 public class Solution {
-
-    // 10초 전: 사용자의 "prev" 명령 입력 시 재생 위치의 10초 전으로 가고, 10초 미만은 0분 0초로
-// 10초 후: 사용자의 "next" 명령 입력 시 재생 위치의 10초 후로 가고, 남은 시간 10초 미만은 마지막 위치로
-// 오프닝 건너뛰기: x >= op_start && x <= op_end 경우 오프닝 끝나는 위치로 이동
-
-//video_len = 동영상 길이 문자열
-// pos = 기능 수행 전 재생 위치
-// op_start = 오프닝 시작 시각 문자열
-// op_end = 오프닝 끝나는 시각 문자열
-// commands = 사용자 입력 1차원 배열
-// 단, 사용자 입력 종류 후 동영상 위치는 mm:ss 형식으로 return 가능하게 solution 완성
-
     public String solution(String video_len, String pos, String op_start, String op_end, String[] commands) {
         int videoLen = changeTimeFormat(video_len);
         int currentPos = changeTimeFormat(pos);
